@@ -9,6 +9,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': ':call mkdp#util#install()', 'for':
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 call plug#end()
 
+let g:coq_settings = { 'display.icons.mode': 'none' }
 autocmd VimEnter * COQnow -s 
 
 set number 
