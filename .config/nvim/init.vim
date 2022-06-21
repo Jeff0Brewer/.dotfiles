@@ -4,7 +4,7 @@ Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
 Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
 Plug 'ms-jpq/coq.thirdparty', {'branch': '3p'}
 
-Plug 'ellisonleao/glow.nvim', {'branch': 'main'}
+Plug 'iamcco/markdown-preview.nvim', { 'do': ':call mkdp#util#install()', 'for': 'markdown', 'on': 'MarkdownPreview' }
 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
@@ -23,7 +23,6 @@ hi Pmenu ctermfg=15 ctermbg=236
 hi Search ctermfg=15 ctermbg=13
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab 
 map <esc> :noh <CR>
-map <leader>b :CHADopen <CR>
-nnoremap <leader>md :Glow <CR><C-w>_<C-w>\|
+map <C-b> :CHADopen <CR>
 
 lua require('init')
