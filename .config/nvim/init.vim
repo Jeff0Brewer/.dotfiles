@@ -7,6 +7,9 @@ Plug 'ms-jpq/coq.thirdparty', {'branch': '3p'}
 Plug 'iamcco/markdown-preview.nvim', { 'do': ':call mkdp#util#install()', 'for': 'markdown', 'on': 'MarkdownPreview' }
 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
+Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
+
 call plug#end()
 
 let g:coq_settings = { 'display.icons.mode': 'none' }
@@ -20,5 +23,6 @@ hi Pmenu ctermfg=15 ctermbg=236
 hi Search ctermfg=15 ctermbg=13
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab 
 map <esc> :noh <CR>
+map <C-b> :CHADopen <CR>
 
 lua require('init')
