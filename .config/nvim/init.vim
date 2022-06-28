@@ -18,8 +18,10 @@ autocmd VimEnter * COQnow -s
 let g:chadtree_settings = { 'theme': { 'icon_glyph_set': 'ascii' } }
 command T CHADopen
 
+command Md MarkdownPreview
+
 set number 
-hi LineNr ctermfg=13 cterm=bold 
+hi LineNr ctermfg=13 cterm=bold
 hi NonText ctermfg=13
 hi StatusLine ctermfg=236 ctermbg=15
 hi StatusLineNC ctermfg=233 ctermbg=7

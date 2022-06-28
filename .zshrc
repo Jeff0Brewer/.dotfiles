@@ -4,4 +4,4 @@ alias python="python3"
 alias vim='nvim'
 alias ls='exa --sort=type --color=never'   
 alias lt='exa -T --sort=type --color=always'
-alias ltm='exa -T --sort=type --color=always -I node_modules -I .git'
+alias ltm='exa -T --sort=type --color=always -I "node_modules|.git"'
