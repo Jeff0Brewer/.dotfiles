@@ -6,7 +6,7 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 Plug 'dense-analysis/ale'
 
-Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 call plug#end()
 
@@ -19,10 +19,8 @@ let g:ale_fixers = {
 \}
 let g:ale_fix_on_save = 1
 
-let g:chadtree_settings = { 'theme': { 'icon_glyph_set': 'ascii' } }
-
+command F FZF
 command Df ALEGoToDefinition
-command T CHADopen
 command Md MarkdownPreview
 
 map <esc> :noh <CR>
