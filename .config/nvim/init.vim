@@ -10,17 +10,18 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 call plug#end()
 
-let g:ale_completion_enabled = 1
-
 let g:ale_fixers = {
 \    '*': ['remove_trailing_lines', 'trim_whitespace'],
 \    'javascript': ['eslint'],
-\    'jsx': ['eslint']
+\    'javascriptreact': ['eslint'],
+\    'typescript': ['eslint'],
+\    'typescriptreact': ['eslint']
 \}
+let g:ale_completion_enabled = 1
 let g:ale_fix_on_save = 1
 
-command F FZF
 command Df ALEGoToDefinition
+command E FZF
 command Md MarkdownPreview
 
 map <esc> :noh <CR>
