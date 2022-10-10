@@ -19,6 +19,7 @@ let g:ale_fixers = {
 \}
 let g:ale_completion_enabled = 1
 let g:ale_fix_on_save = 1
+let g:ale_sign_column_always = 1
 
 command Df ALEGoToDefinition
 command E FZF
@@ -34,6 +35,7 @@ hi NonText ctermfg=236
 hi StatusLine ctermfg=236 ctermbg=15
 hi StatusLineNC ctermfg=233 ctermbg=7
 hi VertSplit ctermfg=236 ctermbg=236
+hi SignColumn ctermbg=black
 
 hi Pmenu ctermfg=15 ctermbg=236
 hi Search ctermfg=0 ctermbg=226
