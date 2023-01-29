@@ -27,6 +27,9 @@ command Md MarkdownPreview
 
 map <esc> :noh <CR>
 
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
+
 set number
 set relativenumber
 hi LineNr ctermfg=254 cterm=bold
