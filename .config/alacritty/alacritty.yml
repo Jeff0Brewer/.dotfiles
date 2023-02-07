@@ -21,7 +21,7 @@ colors:
     blue:    '#80a0ff'
     magenta: '#cf87e8'
     cyan:    '#79dac8'
-    white:   '#c6c6c6'
+    white:   '#e4e4e4'
 
   bright:
     black:   '#949494'
@@ -31,7 +31,7 @@ colors:
     blue:    '#74b2ff'
     magenta: '#ae81ff'
     cyan:    '#85dc85'
-    white:   '#e4e4e4'
+    white:   '#ffffff'
 
 font:
   size: 13.0
