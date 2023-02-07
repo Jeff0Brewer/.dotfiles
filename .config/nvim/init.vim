@@ -1,12 +1,14 @@
 call plug#begin()
 
-Plug 'iamcco/markdown-preview.nvim', { 'do': ':call mkdp#util#install()', 'for': 'markdown', 'on': 'MarkdownPreview' }
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 Plug 'dense-analysis/ale'
 
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'iamcco/markdown-preview.nvim', { 'do': ':call mkdp#util#install()', 'for': 'markdown', 'on': 'MarkdownPreview' }
+
+Plug 'bluz71/vim-moonfly-colors', { 'as': 'moonfly' }
 
 call plug#end()
 
@@ -30,19 +32,12 @@ map <esc> :noh <CR>
 nnoremap <C-d> <C-d>zz
 nnoremap <C-u> <C-u>zz
 
+set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+
 set number
 set relativenumber
-hi LineNr ctermfg=254 cterm=bold
-hi NonText ctermfg=236
 
-hi StatusLine ctermfg=236 ctermbg=15
-hi StatusLineNC ctermfg=233 ctermbg=7
-hi VertSplit ctermfg=236 ctermbg=236
-hi SignColumn ctermbg=black
-
-hi Pmenu ctermfg=15 ctermbg=236
-hi Search ctermfg=0 ctermbg=226
-
-set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+set termguicolors
+colorscheme moonfly
 
 lua require('init')
