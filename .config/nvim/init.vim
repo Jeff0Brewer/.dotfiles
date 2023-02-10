@@ -37,6 +37,8 @@ set nowrap
 set number
 set relativenumber
 
+hi Search ctermfg=0 ctermbg=226
+
 set termguicolors
 colorscheme moonfly
 
