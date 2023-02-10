@@ -33,7 +33,7 @@ nnoremap <C-d> <C-d>zz
 nnoremap <C-u> <C-u>zz
 
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
-
+set nowrap
 set number
 set relativenumber
 
