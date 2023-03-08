@@ -12,16 +12,19 @@ Plug 'bluz71/vim-moonfly-colors', { 'as': 'moonfly' }
 
 call plug#end()
 
+let g:ale_linters = {'rust': ['analyzer', 'cargo']}
 let g:ale_fixers = {
     \ '*': ['remove_trailing_lines', 'trim_whitespace'],
     \ 'javascript': ['eslint'],
     \ 'javascriptreact': ['eslint'],
     \ 'typescript': ['eslint'],
-    \ 'typescriptreact': ['eslint']
+    \ 'typescriptreact': ['eslint'],
+    \ 'rust': ['rustfmt'],
     \ }
 let g:ale_completion_enabled = 1
 let g:ale_fix_on_save = 1
 let g:ale_sign_column_always = 1
+let g:ale_rust_cargo_use_clippy = 1
 
 command E FZF
 command Df ALEGoToDefinition
