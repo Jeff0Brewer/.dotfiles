@@ -3,10 +3,11 @@ LS_COLORS='di=35:ln=34:so=31:pi=33:ex=32:*.css=36:*.h=36' && export LS_COLORS
 
 export FZF_DEFAULT_COMMAND='rg --files --hidden'
 
-alias python="python3"
+alias python='python3'
 alias vim='nvim'
 alias ls='exa --sort=type --color=never'
 alias lt='exa -T --sort=type --color=always'
 alias ltm='exa -T --sort=type --color=always -I "node_modules|.git|target"'
+alias :{q,x}='exit'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
