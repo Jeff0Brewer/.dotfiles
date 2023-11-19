@@ -11,3 +11,11 @@ alias ltm='exa -T --sort=type --color=always -I "node_modules|.git|target"'
 alias :q='exit'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# swap filenames
+swap() {
+    local tmpfile=$(mktemp)
+    mv "$1" "$tmpfile"
+    mv "$2" "$1"
+    mv "$tmpfile" "$2"
+}
