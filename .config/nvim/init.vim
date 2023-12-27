@@ -19,6 +19,7 @@ let g:ale_fixers = {
     \ 'javascriptreact': ['eslint'],
     \ 'typescript': ['eslint'],
     \ 'typescriptreact': ['eslint'],
+    \ 'svelte': ['eslint'],
     \ 'rust': ['rustfmt'],
     \ }
 let g:ale_completion_enabled = 1
