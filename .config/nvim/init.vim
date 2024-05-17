@@ -2,6 +2,8 @@ call plug#begin()
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
+Plug 'stevearc/oil.nvim'
+
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 Plug 'dense-analysis/ale'
